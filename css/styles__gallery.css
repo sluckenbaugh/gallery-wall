@@ -1,0 +1,66 @@
+
+.photo__background {
+    background-image: url('../images/wall.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.painting__background {
+    background-image: url('../images/wall2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: bisque;
+    margin: 5rem auto 5rem;
+    color: #333;
+}
+.header--light {
+    color: salmon;
+}
+
+.grid {
+    display: grid;
+    gap: 4rem;
+}
+
+.gallery {
+    padding: 0 10vw 10rem;
+}
+
+.image {
+    width: 100%;
+    box-shadow: 0 0 40px 0px rgb(40, 40, 40);
+    transition: all 0.2s ease-in;
+    border-radius: 5px;
+}
+.image:hover {
+    transform: scale(1.03);
+    /* opacity: 1; */
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+    .gallery {
+        padding: 0 10vw 10rem;
+    }
+    .image--expanded {
+        grid-column: span 2;
+    }
+    .image--expanded-down {
+        grid-row: span 2;
+    }
+}
+

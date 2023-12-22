@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles__gallery.css" />
+    <link rel="stylesheet" href="css/styles__nav.css" />
+
+    <title>Photography</title>
+  </head>
+  <body class="photo__background">
+    <nav class="nav">
+      <div class="logo">
+        <a href="/Gallery/index.html"
+          ><span>the</span><span>gallery</span><span>wall</span></a
+        >
+      </div>
+      <a href="#" class="btn__toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <ul class="link__list">
+        <li>
+          <a class="list__item" href="/Gallery/photography.html">Photography</a>
+        </li>
+        <li>
+          <a class="list__item" href="/Gallery/painting.html">Painting</a>
+        </li>
+        <li><a class="list__item" href="#">Pen</a></li>
+        <li><a class="list__item" href="#">Mixed Media</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Photography</h1>
+    </header>
+    <div class="gallery grid grid--1x2">
+      <picture
+        ><source
+          type="image/webp"
+          srcset="images/ocean.webp 1x, images/ocean@2x.webp 2x" />
+        <img alt="" class="image"
+      /></picture>
+      <img src="images/flower.jpg" alt="" class="image" />
+      <img src="images/gem.jpg" alt="" class="image image--expanded" />
+      <picture
+        ><source
+          type="image/webp"
+          srcset="images/bubble.webp 1x, images/bubble@2x.webp 2x" />
+        <img src="images/bubble.jpg" alt="" class="image"
+      /></picture>
+      <picture
+        ><source
+          type="image/webp"
+          srcset="images/eye.webp 1x, images/eye@2x.webp 2x" />
+        <img src="images/eye.jpg" alt="" class="image"
+      /></picture>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

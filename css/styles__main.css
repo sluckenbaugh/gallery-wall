@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flow {
+    margin: 0.5rem 0 -0.5rem;
+}
+
+body {
+    background: url(../images/questions.jpg) center center/ cover;
+    height: 100vh;
+    display: grid;
+}
+.main__heading {
+    font-size: 2rem;
+    text-align: center;
+}
+.heading {
+    font-size: 1.5rem;
+}
+.centered {
+    text-align: center;
+}
+
+.accordian {
+    align-items: center;
+    align-self: center;
+    color: #fff;
+    background: rgb(243, 150, 116);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    height: max-content;
+    margin: 5rem auto;
+    padding: 1rem;
+    width: 60%;
+    max-width: 600px;
+}
+
+.header {
+    margin: 1rem;
+}
+
+hr {
+    border: 0.7px solid #fff;
+}
+
+.accordian__content {
+    margin: 0 1rem 1rem ;
+}
+.accordian__content .top {
+    margin: 0 1rem;
+}
+
+.accordian__content h2 {
+    font-weight: 100;
+    font-size: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+.accordian__content h2::after {
+    position: absolute;
+    right: 0;
+    content: '+';
+}
+
+.content {
+    height: 0px;
+    overflow: hidden;
+    transition: 400ms;
+}
+
+.content__container.active .content {
+    height: 80px;
+    overflow: scroll;
+}
+
+.content__container.active h2::after {
+    content: '_';
+    transform: translateY(-4px);
+    font-size: 1.1rem;
+}
+
+
